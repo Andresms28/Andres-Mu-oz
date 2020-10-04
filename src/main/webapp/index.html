@@ -2,28 +2,99 @@
 <html>
     <head>
         <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div id="container">
-            <div>
-                <fieldset>
-                    <legend>Datos del cliente</legend>
-                    <p>Usuario: <input type="text" name="Usuario" ></p>
-                    <p>Contraseña : <input type="password" name="Contrasena" ></p>
-                    <p>Telefono : <input type="tel" name="Telefono" ></p>
-                    <p>e-Mail : <input type="email" name="eMail" ></p>
-                    <p>NumeroNoches : <input type="password" name="NumeroNoches" ></p>
-                </fieldset>
+        <form method="post" action="Reservas" >
+            <div id="container">
+                <div class="div1">
+                    <fieldset>
+                        <legend>Datos del cliente</legend>
+                        <p>Usuario: <input type="text" name="Usuario" ></p>
+                        <p>Contraseña : <input type="password" name="Contrasena" ></p>
+                        <p>Telefono : <input type="tel" name="Telefono" ></p>
+                        <p>e-Mail : <input type="email" name="eMail" ></p>
+                        <p>NumeroNoches : <input type="number" name="NumeroNoches" ></p>
+                    </fieldset>
+                </div>
+
+                <div class="div2">
+                    <fieldset>
+                        <legend>Datos de la estancia</legend>
+                        <p>Dias: 
+                            <select name="Dias" >
+                                <option selected="selected">-1- </option>
+                                <option>-2-</option>
+                                <option>-3-</option>
+                                <option>-4-</option>
+                                <option>-5-</option>
+                                <option>-6-</option>
+                                <option>-7-</option>
+                                <option>-8-</option>
+                                <option>-9-</option>
+                                <option>-10-</option>
+                                <option>-11-</option>
+                                <option>-12-</option>
+                                <option>-13-</option>
+                                <option>-14-</option>
+                                <option>-15-</option>
+                                <option>-16-</option>
+                                <option>-17-</option>
+                                <option>-18-</option>
+                                <option>-19-</option>
+                                <option>-20-</option>
+                                <option>-21-</option>
+                                <option>-22-</option>
+                                <option>-23-</option>
+                                <option>-24-</option>
+                                <option>-25-</option>
+                                <option>-26-</option>
+                                <option>-27-</option>
+                                <option>-28-</option>
+                                <option>-29-</option>
+                                <option>-30-</option>
+                                <option>-31-</option>
+
+                            </select>
+                            Mes:                    
+                            <select name="Mes" > 
+                                <option value="01" selected="selected">Enero</option> 
+                                <option value="02">Febrero</option> 
+                                <option value="03">Marzo</option> 
+                                <option value="04">Abril</option> 
+                                <option value="05">Mayo</option> 
+                                <option value="06">Junio</option> 
+                                <option value="07">Julio</option> 
+                                <option value="08">Agosto</option> 
+                                <option value="09">Septiembre</option> 
+                                <option value="10">Octubre</option> 
+                                <option value="11">Noviembre</option> 
+                                <option value="12">Diciembre</option> 
+                            </select><img src="pic_trulli.jpg" alt=""></p>
+                        <p>Tipo de habitación: 
+                            <input type="radio" name="Habitacion" value="Simple" checked="checked"> Simnple
+                            <input type="radio" name="Habitacion" value="Doble"> Doble
+                            <input type="radio" name="Habitacion" value="Doble"> Matrimonio</p>
+                        <p>Extras : </p>
+                        <p><input type="checkbox" name="Extras" value="Desayuno" >Desayuno<input type="checkbox" name="Extras" value="Comida" >Comida</p>
+                        <p><input type="checkbox" name="Extras" value="Cena" >Cena<input type="checkbox" name="Extras" value="Cama Supletoria" >Cama Supletoria</p>
+
+                    </fieldset>
+                </div>
+
+                <div class="div3">
+                    <fieldset>
+                        <legend>Comentario </legend>
+                        <p><textarea name="Comentario" rows="5" cols="50" placeholder="Escriba aquí..."  ></textarea></p>
+                    </fieldset>
+                </div>
+                <div class="div4">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+
             </div>
-            
-            <div>
-                <fieldset>
-                    <legend>Datos de la estancia</legend>
-                    
-                </fieldset>
-            </div>
-            
-        </div>
+        </form>
     </body>
 </html>
